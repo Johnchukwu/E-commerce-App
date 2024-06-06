@@ -1,7 +1,19 @@
-export default function App() {
+
+import './App.css';
+import PopularCollection from './components/product/PopularCollection';
+
+
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="App">
+      <header className="App-header">
+        <h1>My E-Commerce Site</h1>
+      </header>
+      <main>
+        <PopularCollection />
+      </main>
+    </div>
+  );
 }
+
+export default App;
