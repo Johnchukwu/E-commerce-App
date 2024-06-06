@@ -1,6 +1,8 @@
 
+
 import './App.css';
 import PopularCollection from './components/product/PopularCollection';
+import Hero from './components/Hero'
 
 
 function App() {
@@ -11,9 +13,11 @@ function App() {
       </header>
       <main>
         <PopularCollection />
+         <Hero/>
       </main>
     </div>
   );
 }
 
 export default App;
+
