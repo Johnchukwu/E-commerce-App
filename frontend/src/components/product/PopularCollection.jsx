@@ -49,7 +49,7 @@ const PopularCollection = () => {
   }, []);
 
   return (
-    <div>
+    <div >
       <h2>Popular Collection</h2>
       <div className="popular-collection">
         {mockProducts.map(product => (
