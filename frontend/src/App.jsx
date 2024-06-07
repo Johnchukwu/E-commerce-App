@@ -13,10 +13,10 @@ function App() {
         <h1>My E-Commerce Site</h1>
       </header>
       <main>
+
         <Header />
       <Hero/>
         <PopularCollection />
-         
       </main>
     </div>
   );

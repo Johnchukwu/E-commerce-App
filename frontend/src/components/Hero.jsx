@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <Carousel autoPlay interval={3000} infiniteLoop showThumbs={false}  showStatus={false} className="h-screen">
+    <Carousel  autoPlay interval={3000} infiniteLoop showThumbs={false}  showStatus={false} className="h-screen">
         {/* image1 */}
       <div className="relative  ">
         <img src="https://media.gettyimages.com/id/1410295767/photo/confident-mature-man-wearing-sunglasses.jpg?s=612x612&w=0&k=20&c=aiZ0Ydz9I9IHEu8AWYLfOSTkeYGZQef8tsMFQm_50UU=" />
 
         {/* this is the image text */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center p-3 text-center md:justify-center  bg-black opacity-65">
-          <h1 className=" md:mt-20 text-white p-7 font-serif text-2xl lg:text-8xl md:text-5xl  md:p-5 italic md:leading-normal lg:leading-normal">
+        <div className="absolute inset-0 flex flex-col  items-center text-center justify-end md:pb-6  bg-black opacity-65">
+          <h1 className=" lg:text-5xl md:text-4xl text-3xl text-white p-5 font-serif md:mb-10   italic md:leading-normal lg:leading-normal">
             ELEVATE YOUR STYLE TO THE NEXT LEVEL 
           </h1>
-          <h3 className='text-md lg:text-3xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead text-white mb-7'>
+          <h3 className='text-md lg:text-xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead md:mb-20  text-white '>
             Explore our latest fashion collections and discover the perfect look
             for you
           </h3>
-          <Link to="/shop" className=' md:mt-20 py-2 px-5 md:px-10 mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md hover:scale-90'>Shop now</Link>
+          <Link to="/shop" className=' md:py-2 md:px-5 py-1 px-3 md  mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md hover:scale-90 mb-7 md:mb-20'>Shop now</Link>
         </div>
         {/* end of image text */}
       </div>
@@ -30,14 +30,14 @@ const Hero = () => {
           alt="Image 2"
         />
     {/* image 2 text */}
-<div className="absolute inset-0 flex flex-col justify-center items-center p-3 text-center md:justify-center  bg-black opacity-65">
-          <h1 className="  sm:mt-10 md:mt-20 text-white p-7 font-serif text-2xl lg:text-8xl md:text-5xl md:p-5 italic md:leading-normal lg:leading-normal ">
+    <div className="absolute inset-0 flex flex-col  items-center text-center justify-end md:pb-6  bg-black opacity-65">
+          <h1 className=" lg:text-5xl md:text-4xl text-3xl text-white p-5 font-serif md:mb-10   italic md:leading-normal lg:leading-normal">
             UNLEASH YOUR CONFIDENCE TO WORLD
           </h1>
-          <h3 className='text-md  lg:text-3xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead text-white mb-7'>
+          <h3 className='text-md lg:text-xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead md:mb-20  text-white '>
           Our trendy outfits will make you feel empowered and stylish
           </h3>
-          <Link to="/collection" className='  sm:mt-10 md:mt-20 py-2 px-5 md:px-10 mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md  hover:scale-90'>Explore Our Collections</Link>
+          <Link to="/collection" className='  md:py-2 md:px-5 py-1 px-3 md  mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md hover:scale-90 mb-7 md:mb-20'>Explore Our Collections</Link>
         </div>
       </div>
 
@@ -50,15 +50,15 @@ const Hero = () => {
 
         {/* image 3 text */}
 
-        <div className="absolute inset-0 flex flex-col justify-center items-center p-3 text-center md:justify-center  bg-black opacity-65">
-          <h1 className="  md:mt-10 text-white p-7 font-serif text-2xl lg:text-8xl md:text-5xl md:p-5 italic md:leading-normal lg:leading-normal ">
+        <div className="absolute inset-0 flex flex-col  items-center text-center justify-end md:pb-6  bg-black opacity-65">
+        <h1 className=" lg:text-5xl md:text-4xl text-3xl text-white p-5 font-serif md:mb-10   italic md:leading-normal lg:leading-normal">
             STAY AHEAD OF TRENDS AND BE FASHIONABLE
           </h1>
-          <h3 className='mb-8 text-md lg:text-3xl md:text-2xl mt-0 md:mt-10 md:w-85 font-serif text-lead text-white '>
+          <h3 className='text-md lg:text-xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead md:mb-20  text-white '>
             Explore our latest fashion collections and discover the perfect look
             for you
           </h3>
-          <Link to="./house" className='  md:mt-10 py-2 px-5 md:px-10 mt-0 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md hover:scale-90 '>Learn more</Link>
+          <Link to="/collection" className='  md:py-2 md:px-5 py-1 px-3 md  mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md hover:scale-90 mb-7 md:mb-20'>Learn more</Link>
         </div>
       </div>
 
@@ -70,14 +70,14 @@ const Hero = () => {
           alt="Image 2"
         />
     {/* image 4 text */}
-<div className="absolute inset-0 flex flex-col justify-center items-center p-3 text-center md:justify-center  bg-black opacity-65">
-          <h1 className="  sm:mt-10 md:mt-20 text-white p-7 font-serif text-2xl lg:text-8xl md:text-5xl md:p-5 italic md:leading-normal lg:leading-normal ">
+    <div className="absolute inset-0 flex flex-col  items-center text-center justify-end md:pb-6  bg-black opacity-65">
+    <h1 className=" lg:text-5xl md:text-4xl text-3xl text-white p-5 font-serif md:mb-10   italic md:leading-normal lg:leading-normal">
           EXPERIENCE THE GOOD QUALITY
           </h1>
-          <h3 className='text-md  lg:text-3xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead text-white mb-7'>
+          <h3 className='text-md lg:text-xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead md:mb-20  text-white '>
           Our products are crafted with love and care to ensure exceptional quality
           </h3>
-          <Link to="/collection" className='  sm:mt-10 md:mt-20 py-2 px-5 md:px-10 mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md  hover:scale-90'>Explore Our Collections</Link>
+          <Link to="/collection" className='  md:py-2 md:px-5 py-1 px-3 md  mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md hover:scale-90 mb-7 md:mb-20'>Explore Our Collections</Link>
         </div>
       </div>
 
@@ -88,14 +88,14 @@ const Hero = () => {
           alt="Image 2"
         />
     {/* image 5 text */}
-<div className="absolute inset-0 flex flex-col justify-center items-center p-3 text-center md:justify-center  bg-black opacity-65">
-          <h1 className="  sm:mt-10 md:mt-20 text-white p-7 font-serif text-2xl lg:text-8xl md:text-5xl md:p-5 italic md:leading-normal lg:leading-normal ">
+    <div className="absolute inset-0 flex flex-col  items-center text-center justify-end md:pb-6  bg-black opacity-65">
+    <h1 className=" lg:text-5xl md:text-4xl text-3xl text-white p-5 font-serif md:mb-10   italic md:leading-normal lg:leading-normal">
             EXPREIENCE THE ART OF FASHION
           </h1>
-          <h3 className='text-md  lg:text-3xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead text-white mb-7'>
+          <h3 className='text-md lg:text-xl md:text-2xl md:mt-10 md:w-85 font-serif text-lead md:mb-20  text-white '>
           Our passion for quality and craftsmanship shines through in every stitch
           </h3>
-          <Link to="/collection" className='  sm:mt-10 md:mt-20 py-2 px-5 md:px-10 mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md  hover:scale-90'>Explore Our Collections</Link>
+                 <Link to="/collection" className='  md:py-2 md:px-5 py-1 px-3 md  mt-2 hover:bg-transparent hover:text-white hover:border-2 transition font-bold bg-white rounded-md hover:scale-90 mb-7 md:mb-20'>Explore Our Collections</Link>
         </div>
       </div>
      

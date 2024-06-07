@@ -49,8 +49,13 @@ const PopularCollection = () => {
   }, []);
 
   return (
+
     <div>
       <h2 className='popular-collection-title'>Popular Collection</h2>
+
+    <div >
+      <h2>Popular Collection</h2>
+
       <div className="popular-collection">
         {mockProducts.map(product => (
           <div className="product-card" key={product._id}>
