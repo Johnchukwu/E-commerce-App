@@ -15,10 +15,6 @@ function App() {
       </header>
       <main>
 
-       { /*<Header /> */}
-        <Hero/>
-
-
        {/*} <Header />*/}
       <Hero/>
         <PopularCollection />
