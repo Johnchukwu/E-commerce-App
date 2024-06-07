@@ -4,6 +4,7 @@ import './App.css';
 import PopularCollection from './components/product/PopularCollection';
 import Hero from './components/Hero'
 import Header from './components/header'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Header />
       <Hero/>
         <PopularCollection />
+    <Footer/>
       </main>
     </div>
   );
