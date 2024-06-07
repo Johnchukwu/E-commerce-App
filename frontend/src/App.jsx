@@ -12,7 +12,7 @@ import './App.css';
 import PopularCollection from './components/product/PopularCollection';
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-import Footer from './components/Footer'
+
 
 
 function App() {
