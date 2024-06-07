@@ -1,4 +1,3 @@
-
 import './App.css';
 import PopularCollection from './components/product/PopularCollection';
 
