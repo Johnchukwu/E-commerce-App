@@ -2,7 +2,7 @@
 
 import './App.css';
 import PopularCollection from './components/product/PopularCollection';
-//ximport Header from './components/Header';
+
 import Hero from './components/Hero'
 
 
@@ -15,7 +15,7 @@ function App() {
       </header>
       <main>
 
-       {/*} <Header />*/}
+
       <Hero/>
         <PopularCollection />
       </main>
