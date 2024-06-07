@@ -1,7 +1,24 @@
-export default function App() {
+
+import { useState } from 'react'
+  import Navbar from "./Components/Navbar/Navbar"
+
+
+
+  const App = () => {
+    
+
+    const [theme, setTheme] = useState('light')
+
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+
+   <div className = {`container  ${theme}`}>
+    
+
+   <Navbar theme = {theme} setTheme= {setTheme} />
+
+   </div>
+    
   )
 }
+
+export default App
