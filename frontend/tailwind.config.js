@@ -6,5 +6,8 @@ export default {
     extend: {},
   },
   plugins: [],
+  server :{
+    port: 2000
+  }
 }
 
