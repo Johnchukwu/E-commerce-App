@@ -1,0 +1,25 @@
+.collection-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .collection-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .collection-category {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .collection-category:hover {
+    background-color: #ddd;
+  }
+  

@@ -1,102 +1,258 @@
+/* Navbar Container */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
-    padding: 15px 7%;
-    transition: 0.5s;
-    /* border-bottom: 1px solid #000; */
- 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
- 
+    padding: 10px 20px;
+    background-color: #B2BEB5; /* Ash color */
+    transition: background-color 0.3s, background-image 0.3s; /* Smooth transition for changes */
+    box-shadow: none; /* Optional: remove shadow for a more seamless look */
+    z-index: 1000; /* High z-index to ensure it stays on top */
+    margin-bottom: 0; /* Remove margin below the navbar if any */
+    color: #000; /* Set default text color to black for all text in the Navbar */
+  }
+  
+  /* Default state with potential hero image background */
+  .navbar {
+    transition: background-color 0.3s, background-image 0.3s; /* Smooth transition for background color change */
+  }
 
-}
+  /* State when overlapping the hero section */
+  .navbar.hero-background {
+    background-image: url('path/to/your/hero-image.jpg'); /* Path to hero section's background image */
+    background-size: cover;
+    background-position: center;
+  }
 
-/* navbar hover */
-.navbar:hover {
-    background: #0e05055f;
-    color: #fff;
-   transition: 0.5s; ;
-}
-
-.logo {
-    width: 150px;
-    height: 100px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-ul {
-    flex-direction: 1;
+  /* Scrolled state with solid color */
+  .navbar.scrolled {
+    background-color: #ffffff; /* Example: white background */
+    color: #000; /* Ensuring text color is black for visibility */
+  }
+  
+  /* Logo */
+  .logo {
+    height: 40px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
     list-style: none;
-    text-align: center;
-}
-
-ul li {
-    display: inline-block;
-    margin: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.toggle-icon {
-    width: 50px;
-    cursor: pointer;
-    margin-left: 40px;
-
-}
-
-.search-box {
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-    background: #fff;
-    border: 3px solid #000;
-    padding: 10px 20px;
-    border-radius: 50px;
-
-}
-
-.search-box input {
-    border: 0;
-    background: transparent;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000; /* Change color for visibility */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #000; /* Darken text color on hover */
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    cursor: pointer;
+    color: #000; /* Dark text color */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .dropbtn:hover {
+    color: #000; /* Darken text color on hover */
+  }
+  
+  .dropdown.active .dropbtn {
+    color: #000; /* Change text color to black */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .dropdown.active .dropdown-content {
+    display: block;
+    background-color: #f0f0f0; /* Light grey background color */
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #e0e0e0; /* Light grey background color on hover */
+  }
+  
+  /* Search Box */
+  .search-box {
+    position: relative;
+  }
+  
+  .search-input {
+    width: 200px;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 20px; /* Rounded border */
     outline: none;
-    color: #000;
-    padding: 6px;
-    font-size: 18px;
-    max-width: 200px;
-}
-
-.search-box input::placeholder {
-    color: #000;
-}
-
-.search-box img {
-    width: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #aaa; /* Darken border color on focus */
+  }
+  
+  .search-box img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    height: 20px;
+  }
+  
+  /* Right Section */
+  .right-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .right-section ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .right-section ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .login {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px; /* Rounded border */
     cursor: pointer;
-}
-
-.dark .navbar {
-    background: #000 ;
-    color: #fff;
-}
-
-.dark .search-box {
-    background: #fff;
-}
-
-.dark .search-box input {
-    color: #222;
-}
-
-.dark .search-box input::placeholder {
-    color: #222;
-    
-}
-
-.login {
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login:hover {
+    background-color: #000; /* Darken background color on hover */
+  }
+  
+  /* Toggle Icon */
+  .toggle-icon {
+    height: 30px;
     cursor: pointer;
+  }
+  
+  /* Menu Toggle */
+  .menu-toggle {
+    display: none; /* Hide by default */
+    cursor: pointer;
+  }
+  
+  /* Show menu toggle only on mobile screens */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+  
+    .nav-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .search-box {
+      margin-top: 20px;
+    }
+  
+    .right-section ul {
+      margin-top: 20px;
+    }
+  
+    .menu-toggle {
+      display: block; /* Show menu toggle on mobile screens */
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 1.5rem;
+    }
+  
+    .nav-links, .search-box, .right-section {
+      display: none; 
+    }
+  }
+  
+  /* Show menu items when the menu-toggle-active class is present */
+  .menu-toggle-active .nav-links,
+  .menu-toggle-active .search-box,
+  .menu-toggle-active .right-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-toggle-active .right-section ul {
+    margin-top: 20px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    padding-top: 70px; /* Adjust based on the actual height of your Navbar */
+  }
+
+body {
+    background-image: url('path/to/your/image.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section {
+    margin-top: 0; /* Remove margin above the hero section if any */
+    padding-top: 0; /* Remove padding to bring content closer to the Navbar */
+}
+
+/* Example to ensure alignment */
+.navbar, .hero-section {
+    width: 100%;
 }

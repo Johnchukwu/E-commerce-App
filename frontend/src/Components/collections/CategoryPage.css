@@ -1,0 +1,86 @@
+/* src/CategoryPage.css */
+
+.category-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; /* Adjust the margin to create space for the navbar */
+}
+
+.item-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling animation */
+}
+
+.item-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  min-width: 20%; /* Ensure each card has a minimum width */
+}
+
+.item-card:hover {
+  transform: translateY(-10px);
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.item-name {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.item-price {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.item-button {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+  width: 100%;
+}
+
+.item-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .item-card {
+    min-width: 45%; /* Adjust minimum width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .item-card {
+    min-width: 100%; /* Adjust minimum width for even smaller screens */
+  }
+}
