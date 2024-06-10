@@ -77,6 +77,7 @@ const PopularCollection = () => {
         ))}
       </div>
     </div>
+    </div>
   );
 };
 

@@ -1,26 +1,24 @@
-
-
-import './App.css';
-import PopularCollection from './components/product/PopularCollection';
+import React from 'react'
 import Hero from './components/Hero'
-import Header from './components/header'
+import PopularCollection from './components/product/PopularCollection'
+import Header from './components/Header'
+import About from './components/About'
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>My E-Commerce Site</h1>
-      </header>
-      <main>
+    <>
+    <div>
+      {/* <Hero />
+      <PopularCollection />
+      <Header/> */}
+      
 
-        <Header />
-      <Hero/>
-        <PopularCollection />
-      </main>
+      
     </div>
-  );
+
+    <About/>
+    </>
+  )
 }
 
-export default App;
-
+export default App
