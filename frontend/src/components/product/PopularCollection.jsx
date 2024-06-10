@@ -51,10 +51,9 @@ const PopularCollection = () => {
 
   return (
 
-    <div>
-      <h2 className='popular-collection-title'>Popular Collection</h2>
 
-    <div >
+    
+    <div>
       <h2>Popular Collection</h2>
 
       <div className="popular-collection">
@@ -78,7 +77,7 @@ const PopularCollection = () => {
         ))}
       </div>
     </div>
-    </div>
+
   )}
 
 export default PopularCollection;
