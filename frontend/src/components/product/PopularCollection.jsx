@@ -48,6 +48,7 @@ const PopularCollection = () => {
     return () => clearInterval(interval);
   }, []);
 
+
   return (
 
     <div>
@@ -77,7 +78,7 @@ const PopularCollection = () => {
         ))}
       </div>
     </div>
-  );
-};
+    </div>
+  )}
 
 export default PopularCollection;
