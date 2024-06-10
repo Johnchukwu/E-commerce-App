@@ -1,11 +1,17 @@
+
 // App.jsx
 
 import { useState , useEffect} from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
+
+import { useState } from 'react'
+import Navbar from "./components/Navbar/Navbar"
+
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero';
 import PopularCollection from './components/product/PopularCollection';
+
 import Footer from './components/Footer';
 import CollectionPage from './components/collections/CollectionPage';
 import MenPage from './components/collections/MenPage';
@@ -50,3 +56,27 @@ function App() {
 }
 
 export default App;
+
+import Hero from './components/Hero'
+import Footer from './components/Footer'
+
+function App() {
+  const [theme, setTheme] = useState('light')
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>My E-Commerce Site</h1>
+      </header>
+      <main>
+        <Navbar theme={theme} setTheme={setTheme} />
+        <Hero />
+        <PopularCollection />
+        <Footer />
+      </main>
+    </div>
+  )
+}
+
+export default App;
+
