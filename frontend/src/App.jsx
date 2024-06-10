@@ -1,4 +1,7 @@
 
+export default function App() {
+  return 
+
 // App.jsx
 
 import { useState , useEffect} from 'react';
@@ -18,6 +21,7 @@ import MenPage from './components/collections/MenPage';
 import WomenPage from './components/collections/WomenPage';
 import AccessoriesPage from './components/collections/AccessoriesPage';
 import About from './components/about/About';
+import Login from "./components/login/Login";
 
 
 function App() {
@@ -51,32 +55,8 @@ function App() {
 
         </div>
         <Footer className="footer" />
+        <Login />
       </div>
     );
 }
-
-export default App;
-
-import Hero from './components/Hero'
-import Footer from './components/Footer'
-
-function App() {
-  const [theme, setTheme] = useState('light')
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>My E-Commerce Site</h1>
-      </header>
-      <main>
-        <Navbar theme={theme} setTheme={setTheme} />
-        <Hero />
-        <PopularCollection />
-        <Footer />
-      </main>
-    </div>
-  )
-}
-
-export default App;
 
